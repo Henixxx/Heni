@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heni</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="Untitled-1.html" class="logo">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/465880550_1203878890725524_160168371990495423_n.png?stp=dst-png_s480x480&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=YOPdPjoHMIsQ7kNvgFz6p4M&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFahBd2RT0rYIXHY47vSMCXg2gzCx5o1-Z6A7T6f1CVPA&oe=675D45BA" alt="Your Game Shop Logo">
+            </a>
+            <!-- Navigation -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Explore the World with Us</h1>
+            <p>Your dream vacation awaits</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service">
+            <h2>Popular Destinations</h2>
+            <p>Find your next adventure</p>
+        </div>
+        <div class="service">
+            <h2>Exclusive Offers</h2>
+            <p>Save on your next trip</p>
+        </div>
+        <div class="service">
+            <h2>Book Your Trip</h2>
+            <p>Book with ease and confidence</p>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations">
+        <h2>TOP DESTINATIONS</h2>
+        <div class="destination-list">
+            <div class="destination-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRM8ZTrYx3iTlMfJlPYyX_Pp6c94kf1mOXg&s" alt="Italy">
+                <h3>1. Italy</h3>
+            </div>
+            <div class="destination-item">
+                <img src="https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg" alt="Japan">
+                <h3>2. Japan</h3>
+            </div>
+            <div class="destination-item">
+                <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iZDshdZpXIHI/v0/-1x-1.webp" alt="Australia">
+                <h3>3. Australia</h3>
+            </div>
+            <div class="destination-item">
+                <img src="https://media.istockphoto.com/id/1145450965/photo/santorini-island-greece.jpg?s=612x612&w=0&k=20&c=AY_kxRrkTjbDLhqpotxgW8CZp4ovEIM1tRdTrvXKcAM=" alt="Greece">
+                <h3>4. Greece</h3>
+            </div>
+            <div class="destination-item">
+                <img src="https://www.costsavertour.com/media/nylpwiyy/highlights-france-guided-tour-7.jpg?crop=0.07407407407407407%2C0%2C0.25925925925925924%2C0&cropmode=percentage&format=webp&mode=crop&width=1200&height=1200&quality=80" alt="France">
+                <h3>5. France</h3>
+            </div>
+            <div class="destination-item">
+                <img src="https://149990825.v2.pressablecdn.com/wp-content/uploads/2023/09/Rio.jpg" alt="Brazil">
+                <h3>6. Brazil</h3>
+            </div>
+            <div class="destination-item">
+                <img src="https://internationalliving.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fwv75stsetqy3%2FDaKdXY2tkQGWeVQiCbSx7%2Fac01166282697e4e0cafb99180d35cd1%2FThailand_Featured.jpg%3Fq%3D60%26fit%3Dfill%26fm%3Dwebp&w=3840&q=60" alt="Thailand">
+                <h3>7. Thailand</h3>
+            </div>
+            <div class="destination-item">
+                <img src="https://www.go2africa.com/wp-content/uploads/2016/11/tobias-fischer-zZLQzxk_MOU-unsplash.jpg" alt="South Africa">
+                <h3>8. South Africa</h3>
+            </div>
+        </div>
+    </section>
+<!-- Contact Section -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    
+    <!-- Login Form -->
+    <div id="login-form" class="login-form">
+        <h3>Log In</h3>
+        <form id="login">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+    
+    <!-- Contact Form (Hidden until logged in) -->
+    <div id="contact-form" class="contact-form" style="display:none;">
+        <h3>Send Us an Email</h3>
+        <form id="contact" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="destination">Choose a Destination:</label>
+            <select id="destination" name="destination">
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Australia">Australia</option>
+                <option value="Greece">Greece</option>
+                <option value="France">France</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Thailand">Thailand</option>
+                <option value="South Africa">South Africa</option>
+            </select>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Email</button>
+        </form>
+    </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heni</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Your content above here -->
+    
+    <!-- Chat Box Section -->
+    <div id="chat-box" class="chat-box">
+        <div class="chat-header">
+            <h4>Private Chat</h4>
+            <button id="close-chat" class="close-chat">X</button>
+        </div>
+        <div class="chat-body">
+            <!-- Example messages -->
+            <div class="chat-message">
+                <p><strong>User1:</strong> Hello! How can I help you?</p>
+            </div>
+            <div class="chat-message">
+                <p><strong>User2:</strong> I need assistance with my booking.</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message" placeholder="Type a message...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+
+    <!-- Button to Open Chat -->
+    <button id="open-chat" class="open-chat">Open Chat</button>
+
+    <!-- Your content below here -->
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
+<section id="hero" class="hero-section">
+    <div class="hero-content">
+        <h1>Welcome ! </h1>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Heni Travel Agency | All Rights Reserved</p>
+    </footer>
+</body>
+</html>   

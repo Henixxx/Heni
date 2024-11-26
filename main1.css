@@ -1,0 +1,242 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* Styling the logo and header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000000;
+}
+
+.logo-link {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 50px;  /* Adjust size of logo */
+    height: auto;
+}
+
+.title {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+/* Screenshot section styles */
+.screenshot-container {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.screenshot-title {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
+.screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+.screenshot {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vid {
+    width: 80%;
+    max-width: 640px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Updated video styling */
+.vid {
+    width: 90%; /* Increases the video width */
+    max-width: 800px; /* Sets a larger max width */
+    height: auto; /* Maintains the aspect ratio */
+    border: none;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Screenshot section styles */
+.screenshot-container {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: url('https://i.gifer.com/7dDt.gif') no-repeat center center/cover; /* Replace with your image URL */
+    background-attachment: fixed; /* Optional for parallax effect */
+    color: white; /* Change text color to ensure readability over the background */
+}
+/* Lightbox styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above all other content */
+}
+
+.lightbox-img {
+    max-width: 190%;
+    max-height: 190%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.lightbox:hover .lightbox-img {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.lightbox.active {
+    display: flex; /* Show when active */
+}
+
+/* Languages section */
+.languages-container {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: black;
+}
+
+.language-title {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.8;
+    flex: 1 1 300px;
+    max-width: 500px;
+    text-align: left;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.images {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+.simple-footer {
+    background-color: #000000;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-content p {
+    margin: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ffd700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .paragraph {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .img {
+        width: 150px;
+    }
+}

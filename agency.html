@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--header-->
+    <header>
+        <a href="javascript:history.back()" class="logo-link">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/465880550_1203878890725524_160168371990495423_n.png?stp=dst-png_s480x480&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Cy1Hin8dpqkQ7kNvgEMm_0-&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFO2jnSaFRW8fpCmPLXCYCI0deDua17cI2YyHgTdEIBNg&oe=6763DD3A" alt="Logo" class="logo">
+        </a>
+    </header>
+
+   <!--section-->
+   <section class="screenshot-container">
+    <h2 class="screenshot-title">Gaming Store</h2>
+    <div class="screenshots">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462582187_954836743331631_8345236336793012733_n.png?stp=dst-png_s720x720&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IaM5kHwSv38Q7kNvgE1We5G&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHzRJRP7VzZ90ss_CxGKNXRGSO3yewuPSkd4UfQ-C1r8g&oe=676658A2" alt="Screenshot 1" class="screenshot" onclick="openLightbox(this)">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462565709_1506875663323624_3777807333499761453_n.png?stp=dst-png_p526x395&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=SNuuw4jYNqYQ7kNvgGJ6DT4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHJm9koJKH0KBuYLg1jBPsqWa7ja76AttJCW-D61bkpQQ&oe=67668252" alt="Screenshot 2" class="screenshot" onclick="openLightbox(this)">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462576727_433976439749199_1977037498906735918_n.png?stp=dst-png_s720x720&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=aMPJyYcPV-MQ7kNvgGq5Ez3&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFLePEwAKVzx_ISo4isQkCtG1yfJ1FaUEF53Wfs_nbS9g&oe=67665225" alt="Screenshot 3" class="screenshot" onclick="openLightbox(this)">
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Full Size Screenshot">
+    </div>
+
+    <video autoplay loop controls width="80%" height="auto" class="vid">
+        <source src="./SR.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+<script src="scripts.js"></script>
+</body>
+
+<script>
+    function openLightbox(imgElement) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        lightboxImg.src = imgElement.src; // Set the clicked image's source
+        lightbox.classList.add('active'); // Show the lightbox
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.remove('active'); // Hide the lightbox
+    }
+</script>
+</body>
+
+
+    <!--footer-->
+    <footer class="simple-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Heni . All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/nourine.chabbi.1" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://github.com/NourineChabbi" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/ur___nourine_/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
